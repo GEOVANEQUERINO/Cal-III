@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="calculator">
+            <div class="display">
+                <h3>Calculadora</h3>
+                <input type="text" id="result" readonly>
+                <input type="text" id="history" readonly>                
+            </div>
+            <div class="buttons">
+                <button onclick="addToHistory('7')">7</button>
+                <button onclick="addToHistory('8')">8</button>
+                <button onclick="addToHistory('9')">9</button>
+                <button onclick="addToHistory('/')">/</button>
+                <button onclick="addToHistory('4')">4</button>
+                <button onclick="addToHistory('5')">5</button>
+                <button onclick="addToHistory('6')">6</button>
+                <button onclick="addToHistory('*')">*</button>
+                <button onclick="addToHistory('1')">1</button>
+                <button onclick="addToHistory('2')">2</button>
+                <button onclick="addToHistory('3')">3</button>
+                <button onclick="addToHistory('-')">-</button>
+                <button onclick="addToHistory('0')">0</button>
+                <button onclick="addToHistory('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="addToHistory('+')">+</button>
+                <button class="ce"onclick="clearDisplay()">C</button>
+            </div>
+        </div>        
+        <div class="history" id="operationHistory" onclick="displayHistory(event)"></div>
+        <script src="js/script.js"></script>
+    </div>  
+    <footer>
+        <p><small>Desenvolvido por Geovane Q Valentim &#174</small></p>
+    </footer>
+</body>
+
+</html>
